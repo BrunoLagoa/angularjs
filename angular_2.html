@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+</head>
+<body>
+
+<div ng-controller="CtrlApp" >
+    <h1>{{nome}} - {{ idade * 10 }}, {{ cidade }}</h1>
+</div>
+
+<div ng-controller="CtrlApp2" >
+    <h1>{{nome}} - {{ idade * 10 }}, {{ cidade }}</h1>
+</div>
+
+<script>
+    var CtrlApp = function ($scope) {
+        $scope.nome = "Bruno";
+        $scope.cidade = "Lagoa Santa";
+        $scope.idade = 30;
+    };
+
+    var CtrlApp2 = function ($scope) {
+        $scope.nome = "Cesar";
+        $scope.cidade = "Lagoa Santa";
+        $scope.idade = 29;
+    };
+</script>
+
+</body>
+</html>
