@@ -7,6 +7,7 @@
 <body>
 
 <div ng-controller="CtrlApp" >
+    <input type="text" ng-model="nome" >
     <h1>{{nome}} - {{ idade * 10 }}, {{ cidade }}</h1>
 </div>
 
@@ -19,6 +20,9 @@
         $scope.nome = "Bruno";
         $scope.cidade = "Lagoa Santa";
         $scope.idade = 30;
+        $scope.$watch('nome', function() {
+           console.log($scope.nome);
+        });
     };
 
     var CtrlApp2 = function ($scope) {
