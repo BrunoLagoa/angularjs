@@ -9,12 +9,8 @@
 <div ng-controller="CtrlPessoas">
     <h1>Sistema de gerenciamento de pessoas</h1>
 
-    <h2>Listagem de Pessoas</h2>
-    <ul>
-        <li ng-repeat="pessoa in pessoas">
-            {{ pessoa.nome }}, {{ pessoa.cidade }}
-        </li>
-    </ul>
+    <div ng-view=""></div>
+
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>

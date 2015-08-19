@@ -1,6 +1,16 @@
 angular
     .module('pessoas', [])
-    .controller('CtrlPessoas', function($scope) {
+
+    .config(function ($routeProvider) {
+
+        $routeProvider
+            .when('/', {
+            templateUrl: 'listar.html'
+        });
+
+    })
+
+    .controller('CtrlPessoas', function ($scope) {
 
         $scope.pessoas = [
             {nome: "Maria", cidade: "São Paulo"},
