@@ -25,7 +25,11 @@ angular
             {nome: "Pedro", cidade: "Rio de Janeiro"},
             {nome: "João", cidade: "Brasilia"},
             {nome: "Cleber", cidade: "Belo Horizonte"}
-        ]
+        ];
+
+        $scope.remover = function(index) {
+            $scope.pessoas.splice(index, 1);
+        };
 
     })
 
