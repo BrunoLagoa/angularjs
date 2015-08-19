@@ -10,7 +10,7 @@ angular
 
     })
 
-    .controller('CtrlPessoas', function ($scope) {
+    .controller('CtrlPessoas', function($scope) {
 
         $scope.pessoas = [
             {nome: "Maria", cidade: "São Paulo"},
@@ -18,5 +18,17 @@ angular
             {nome: "João", cidade: "Brasilia"},
             {nome: "Cleber", cidade: "Belo Horizonte"}
         ]
+
+    })
+
+    .controller('CtrlAdicionar', function($scope) {
+
+        $scope.add = function() {
+
+            $scope.pessoas.push({
+                nome: $scope.pessoa.nome,
+                cidade: $scope.pessoa.cidade
+            });
+        };
 
     });
