@@ -6,18 +6,26 @@
 </head>
 <body>
 
-<input type="text" ng-model="valor">
-<input type="checkbox" ng-model="checado"> Show
+<div  ng-controller="CtrLista">
+    <ul>
+        <li ng-repeat="pessoa in pessoas">
+            {{ pessoa.nome }}, {{ pessoa.cidade }}
 
-<input type="checkbox" ng-model="hide"> Hide (Esconde)
-
-<div ng-show="checado">
-    Olá {{ valor }}! Show
+        </li>
+    </ul>
 </div>
 
-<div ng-hide="hide">
-    Olá {{ valor }}! Hide
-</div>
+<div ></div>
 
+<script>
+    var CtrLista = function($scope) {
+        $scope.pessoas = [
+            {nome: "Maria", cidade: "São Paulo"},
+            {nome: "João", cidade: "Salvador"},
+            {nome: "Tico", cidade: "Rio de Janeiro"},
+            {nome: "Marta", cidade: "Belo Horizonte"},
+        ];
+    }
+</script>
 </body>
 </html>

@@ -6,32 +6,18 @@
 </head>
 <body>
 
-<div ng-controller="CtrlApp" >
-    <input type="text" ng-model="nome" >
-    <input type="text" ng-model="idade" >
-    <h1>{{nome}} - {{ idade * 10 }}, {{ cidade }}</h1>
+<input type="text" ng-model="valor">
+<input type="checkbox" ng-model="checado"> Show
+
+<input type="checkbox" ng-model="hide"> Hide (Esconde)
+
+<div ng-show="checado">
+    Olá {{ valor }}! Show
 </div>
 
-<div ng-controller="CtrlApp2" >
-    <h1>{{nome}} - {{ idade * 10 }}, {{ cidade }}</h1>
+<div ng-hide="hide">
+    Olá {{ valor }}! Hide
 </div>
-
-<script>
-    var CtrlApp = function ($scope) {
-        $scope.nome = "Bruno";
-        $scope.cidade = "Lagoa Santa";
-        $scope.idade = 30;
-        $scope.$watch('nome', function() {
-           console.log($scope.nome);
-        });
-    };
-
-    var CtrlApp2 = function ($scope) {
-        $scope.nome = "Cesar";
-        $scope.cidade = "Lagoa Santa";
-        $scope.idade = 29;
-    };
-</script>
 
 </body>
 </html>
