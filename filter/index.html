@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <title> Pessoas </title>
+</head>
+<body>
+
+<div ng-controller="CtrlApp">
+    <h1>{{ frase | upper }}</h1>
+
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+<script>
+    angular.module('App', [])
+            .filter('upper', function() {
+                return function(input) {
+                    return input.toUpperCase();
+                }
+            })
+            .controller('CtrlApp', function($scope) {
+                $scope.frase = "Olá, meu nome é Bruno";
+            });
+</script>
+</body>
+</html>
