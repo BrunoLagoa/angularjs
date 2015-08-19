@@ -5,8 +5,16 @@ angular
 
         $routeProvider
             .when('/', {
-            templateUrl: 'listar.html'
-        });
+                templateUrl: 'listar.html'
+            })
+            .when('/pessoa/adicionar', {
+                templateUrl: 'adicionar.html',
+                controller: 'CtrlAdicionar'
+            })
+            .when('/pessoa/:index', {
+                templateUrl: 'editar.html',
+                controller: 'CtrlEditar'
+            });
 
     })
 
@@ -25,10 +33,14 @@ angular
 
         $scope.add = function() {
 
-            $scope.pessoas.push({
-                nome: $scope.pessoa.nome,
-                cidade: $scope.pessoa.cidade
-            });
+            $scope.pessoas.push($scope.pessoa);
+
+            $scope.pessoa = "";
+            $scope.result = "Registro adicionado com sucesso!";
         };
 
+    })
+
+    .controller('CtrlEditar', function($scope, $routeParams) {
+        $scope.pessoa = $scope.pessoas[$routeParams.index];
     });
