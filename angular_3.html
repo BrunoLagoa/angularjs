@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+</head>
+<body>
+
+<input type="text" ng-model="valor">
+<input type="checkbox" ng-model="checado"> Show
+
+<input type="checkbox" ng-model="hide"> Hide (Esconde)
+
+<div ng-show="checado">
+    Olá {{ valor }}! Show
+</div>
+
+<div ng-hide="hide">
+    Olá {{ valor }}! Hide
+</div>
+
+</body>
+</html>
