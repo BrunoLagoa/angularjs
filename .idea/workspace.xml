@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f7bb5ad-73ab-492f-b163-2f04c6d7af62" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular_4-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular_5.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="angularjs.iws" />
@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="angular_4-1.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/angular_4-1.html">
+      <file leaf-file-name="angular_5.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/angular_5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30063292">
-              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.72626585">
+              <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -56,6 +56,7 @@
         <option value="$PROJECT_DIR$/angular_3.html" />
         <option value="$PROJECT_DIR$/angular_4.html" />
         <option value="$PROJECT_DIR$/angular_4-1.html" />
+        <option value="$PROJECT_DIR$/angular_5.html" />
       </list>
     </option>
   </component>
@@ -505,8 +506,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angular_4-1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30063292">
+        <state vertical-scroll-proportion="-7.3076925">
           <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular_5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72626585">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
           <folding />
         </state>
       </provider>
