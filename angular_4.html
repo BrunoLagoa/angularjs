@@ -6,11 +6,12 @@
 </head>
 <body>
 
+Busca: <input type="search" ng-model="busca">
+
 <div  ng-controller="CtrLista">
     <ul>
-        <li ng-repeat="pessoa in pessoas">
+        <li ng-repeat="pessoa in pessoas | filter:busca">
             {{ pessoa.nome }}, <b>{{ pessoa.cidade }}</b>
-
         </li>
     </ul>
 </div>
