@@ -6,28 +6,22 @@
 <body>
 
 <div ng-controller="CtrlApp">
-    <input type="text" ng-model="nome" />
+    <input type="text" ng-model="nome" ng-change="loggar()"/>
     <h1>{{nome}} - {{idade}}, {{cidade}}</h1>
 </div>
 
-<div ng-controller="CtrlApp2">
-    <h1>{{nome}} - {{idade}}, {{cidade}}</h1>
-</div>
 
 <script>
     var CtrlApp = function($scope) {
         $scope.nome = "Wesley";
         $scope.cidade = "Indaiatuba";
         $scope.idade = 29;
-        $scope.$watch('nome', function() {
-         console.log($scope.nome);
-        });
-    };
 
-    var CtrlApp2 = function($scope) {
-        $scope.nome = "Wesley";
-        $scope.cidade = "Indaiatuba";
-        $scope.idade = 30;
+        $scope.loggar = function() {
+            alert($scope.nome);
+        }
+
+
     };
 </script>
 
